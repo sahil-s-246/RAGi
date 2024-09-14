@@ -73,7 +73,8 @@ def recommend(query):
             json.dump(data, file, indent=4)
         # Ranking
 
-        res = model.generate_content([f"Rerank json objects in this data {data} \n\n according to the query: {query}"],
+        res = model.generate_content([f"Rerank json objects in this data {data} \n\n according to the query: {query}\n\n"
+                                      f"Remove the most irrelevant ones but dont remove many"],
                                      generation_config={"response_mime_type": "application/json"})
         # print(res.text)
         result = json.loads(res.text)
@@ -109,7 +110,7 @@ elif choice == "Custom":
     if q:
         order, first = recommend(q)
         # Generate Image of first recommendation
-        API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
+        API_URL = "https://api-inference.huggingface.co/models/CompVis/stable-diffusion-v1-4"
         headers = {"Authorization": st.secrets["hftoken"]}
         payload = {"inputs": first["description"]}
         response = requests.post(API_URL, headers=headers, json=payload)
