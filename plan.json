@@ -1,0 +1,27 @@
+{
+    "Plan A": {
+        "Breakfast": "Oatmeal with berries and almonds",
+        "Lunch": "Grilled chicken salad with quinoa",
+        "Dinner": "Salmon with steamed vegetables"
+    },
+    "Plan B": {
+        "Breakfast": "Greek yogurt with honey and walnuts",
+        "Lunch": "Turkey wrap with avocado and spinach",
+        "Dinner": "Stir-fried tofu with brown rice"
+    },
+    "Plan C": {
+        "Breakfast": "Smoothie with spinach, banana, and protein powder",
+        "Lunch": "Vegetable soup with whole-grain bread",
+        "Dinner": "Chicken curry with basmati rice"
+    },
+    "Plan D": {
+        "Breakfast": "Scrambled eggs with whole-wheat toast",
+        "Lunch": "Lentil and vegetable stew",
+        "Dinner": "Grilled shrimp with roasted sweet potatoes"
+    },
+    "Plan E": {
+        "Breakfast": "Chia pudding with mixed fruits",
+        "Lunch": "Quinoa salad with black beans and avocado",
+        "Dinner": "Baked cod with asparagus and quinoa"
+    }
+}
